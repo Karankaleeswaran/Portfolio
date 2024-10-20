@@ -1,0 +1,36 @@
+<style>
+  nav {
+    background-color: black;
+    color: red;
+    padding: 20px;
+  }
+  ul {
+    display: inline;
+    margin-left: 50%;
+    padding: 0;
+    list-style-type: none; /* Removes default bullets */
+  }
+  li {
+    display: inline; /* Change to inline-block for box effect */
+    margin: 10px; /* Add some space between the boxes */
+    padding: 10px; /* Add padding inside the boxes */
+    border: 2px solid red; /* Add a border around each box */
+    /* First Dont Use The border radius see the output after that use the border radius */
+    border-radius: 10px; /* For Making The list of items some radius*/
+
+    background-color: black; /* Optional: set background color */
+  }
+  h1 {
+    display: inline;
+  }
+</style>
+
+<nav>
+  <h1>Greens Technology</h1>
+  <ul>
+    <li>Home</li>
+    <li>About Green's</li>
+    <li>Course</li>
+    <li>Contact Us</li>
+  </ul>
+</nav>
