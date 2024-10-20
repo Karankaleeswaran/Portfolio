@@ -5,7 +5,7 @@
     padding: 20px;
   }
   ul {
-    display: inline;
+    display: inline;                                   /* NOTE : FIRST MAKE DISPLAY PROPERTY INLINE FOR ONLY li ELEMENTS, AFTER THAT USE THE INLINE PROPERTY FOR ALL */
     margin-left: 50%;
     padding: 0;
     list-style-type: none; /* Removes default bullets */
@@ -15,9 +15,8 @@
     margin: 10px; /* Add some space between the boxes */
     padding: 10px; /* Add padding inside the boxes */
     border: 2px solid red; /* Add a border around each box */
-    /* First Dont Use The border radius see the output after that use the border radius */
+/* First Dont Use The border radius see the output after that use the border radius */
     border-radius: 10px; /* For Making The list of items some radius*/
-
     background-color: black; /* Optional: set background color */
   }
   h1 {
