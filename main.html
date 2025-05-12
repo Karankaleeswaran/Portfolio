@@ -1,120 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylee.css">
 </head>
 <body>
-    
-      <nav>
-        <h2>Navigation Menu</h2>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-      <!-- Home Section -->
-        <section id="home">
-          <header>
-            <h1>Welcome to My Portfolio</h1>
-          </header>
-          <p>Hello! I'm <b>Kaleeswarana V</b>, an aspiring web developer passionate about building clean and use-friendly websites.</p>
-
-          <blockquote cite="https://developer.mozilla.org">
-            "The web is evolving quickly and so should your skills"
-          </blockquote>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-          <h2>About Me</h2>
-          <p>I an a <i>dedicated</i> student learning web development. I enjoy solving problems , creating projects and continuosly imporving my skills</p>
-        </section>
-
-        <!-- Project Section -->
-         <section id="project">
-          <h2>Project</h2>
-          <ul>
-            <li>
-              <b>Portfolio Website:</b> A personal webiste to showcase my work.
-            </li>
-
-            <li>
-              <b>ToDo Apps : </b> A simple app to manage daily tasks.
-            </li>
-            <li>
-              <b>E-Commerce Mock : </b> A basic design of an online shop.
-            </li>
+      <header>
+        <nav>
+          <h1>My Portfolio</h1>
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
-         </section>
+        </nav>
+      </header>
 
-         <!-- Education Details -->
-          <section id="education">
-            <h2>Education Details</h2>
-            <table border="2">
-              <thead>
-                <tr>
-                  <th>Years</th>
-                  <th>Course</th>
-                  <th>Insitution</th>
-                </tr>
-              </thead>
+      <main>
+        <section id="home" class="home">
+          <h2>Hello, I'm Kaleeswaran V</h2>
+          <p>Full Stack Developer | Creative Thinker</p>
+        </section>
 
-              <tbody>
-                <tr>
-                  <td rowspan="2">2020-2023</td>
-                  <td>B.Sc Computer Science</td>
-                  <td rowspan="2">ABC College</td>
-                </tr>
-                <tr>
-                  <td>Web Development</td>
-                </tr>
-              </tbody>
-            </table>
-          </section>
+        <section id="about" class="about">
+          <h2>About Me</h2>
+          <p>I'm passionate developer focused on building responsive and beautiful websites and applications.</p>
+        </section>
 
-          <!-- Skills Section -->
-           <section id="section">
-            <h2>Skills</h2>
-            <dl>
-              <dt>HTML</dt>
-              <dd>Strong understanding of semantic HTMLs , forms, tables and multimedia elements.</dd>
-            </dl>
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
+          <div class="project-grid">
+            <div class="card">
+              <h3>E-Commerce App</h3>
+              <p>React + Spring Boot based responsive shopping platform with card and payment.</p>
+            </div>
 
-            <dt>JavaScript</dt>
-            <dd>Basic understanding of variables, functions , loops, and DOM manipulation.</dd>
-          </dl>
+            <div class="card">
+              <h3>Portfolio WebSite</h3>
+              <p>Personal portfolio using HTML , CSS , FlexBox , Grid , media quries and animations</p>
+            </div>
+            <div class="card">
+              <h3>Basic HTML Project</h3>
+              <p>With the basic HTML first i created the website for show my Personal Details</p>
+            </div>
+          </div>
+        </section>
 
-          <dt>Java</dt>
-          <dd>OOPS concepts , exception handling , basic Java Application</dd>
-        </dl>
-           </section>
+        <section id="skills" class="skills">
+          <h2>Skills</h2>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Java</li>
+            <li>Spring Boot</li>
+          </ul>
+        </section>
 
-           <!-- Contact Section -->
-            <section id="contact">
-              <h2>Contact Me</h2>
-              <form>
-                <label for="name">Name : </label><br>
-                <input type="text" name="name" id="name" required placeholder="for eg : John"><br><br>
+        <section id="education" class="education">
+          <h2>Education Details</h2>
+          <p>B.Tech in Computer Science , AAA University 2025</p>
+        </section>
 
-                <label for="email">Email: </label><br>
-                <input type="email" name="email" id="email" required placeholder="Eg : john@123gmail.com"><br><br>
+        <section id="contact" class="contact">
+          <h2>Contact</h2>
+          <p>Email : kalesomrbranch@gmail.com</p>
+          <p>Phone : +91-9876543210</p>
+        </section>
+      </main>
 
-                <label for="message">Message :</label><br>
-                <input type="message" name="message" rows ="4" cols="30" id="message" required>
+      <footer>
+        <p>&copy;2025 My Portfolio</p>
+      </footer>
 
-                <input type="submit" value="Send">
-              </form>
-            </section>
-
-            <footer>
-              <p>&copy; 2025 Kaleeswarana . All rights reserved</p>
-            </footer>
 </body>
 </html>
